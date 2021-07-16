@@ -44,9 +44,9 @@ export class MessageForm extends React.Component {
   render() {
     return (
       <MessageFormContainer>
-        <UserInput type="text" placeholder={'Quem é você?'} onChange={this.onChangeUser} value={this.state.userValue}/>
-        <TextInput type="text" placeholder={'Sua Mensagem'} onChange={this.onChangeText}  value={this.state.textValue}/>
-        <button onClick={this.onSendMessage}>Manda Vê</button>
+        <UserInput type="text" placeholder={'Nome'} onChange={this.onChangeUser} value={this.state.userValue}/>
+        <TextInput type="text" placeholder={'Digite uma Mensagem'} onChange={this.onChangeText}  value={this.state.textValue}/>
+        <button onClick={this.onSendMessage}>Enviar</button>
       </MessageFormContainer>
     );
   }
